@@ -20,11 +20,21 @@ const App = () => {
 
   return (
     <div className="Landing-container relative overflow-hidden ">
-      <div className=" fixed bottom-3 left-5 p-4 rounded-t-xl rounded-br-xl bg-[blue] z-[999]">
-        <IoIosCall className="text-2xl text-[white]" />
+      <div className=" fixed bottom-3 left-5 rounded-t-xl rounded-br-xl bg-[blue] z-[999]">
+        <a
+          href="tel:+91-8690869291"
+          className="block text-2xl hover:text-3xl p-4"
+        >
+          <IoIosCall className=" text-[white]" />
+        </a>
       </div>
-      <div className="fixed bottom-3 right-5 p-4 rounded-t-xl rounded-bl-xl bg-[green] z-[999]">
-        <RiWhatsappLine className="text-2xl text-[white]" />
+      <div className="fixed bottom-3 right-5 rounded-t-xl rounded-bl-xl bg-[green] z-[999]">
+        <a
+          href="https://wa.me/918690869291/?text=Please%20Help%20Me"
+          className="block p-4 text-2xl hover:text-3xl"
+        >
+          <RiWhatsappLine className=" text-[white]" />
+        </a>
       </div>
       <div
         className={`sideMenubar fixed  right-0 top-0 w-full sm:w-[40%] md:w-[30%]  bg-[#621308] text-white  origin-right   duration-300 ${
